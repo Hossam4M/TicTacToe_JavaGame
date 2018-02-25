@@ -89,6 +89,7 @@ public  class GameBoardBase extends GridPane {
        
            Button1.setOnAction((ActionEvent event) -> {
                if(move%2==0){
+                   Button1.setDisable(true);
               Button1.setText("x");
              Button1.setStyle("-fx-font-size: 6em; -fx-text-fill: red; ");
               move++;}
@@ -107,7 +108,9 @@ public  class GameBoardBase extends GridPane {
         Button2.setPrefHeight(172.0);
         Button2.setPrefWidth(234.0);
        
-            Button2.setOnAction((ActionEvent event) -> {if(move%2==0){
+            Button2.setOnAction((ActionEvent event) ->
+            {Button2.setDisable(true);
+                if(move%2==0){
               Button2.setText("x");
              Button2.setStyle("-fx-font-size: 6em; -fx-text-fill: red; ");
               move++;}
@@ -127,6 +130,7 @@ public  class GameBoardBase extends GridPane {
         Button3.setPrefWidth(234.0);
        
             Button3.setOnAction((ActionEvent event) -> {
+                Button3.setDisable(true);
                 if(move%2==0){
               Button3.setText("x");
              Button3.setStyle("-fx-font-size: 6em; -fx-text-fill: red; ");
@@ -146,6 +150,7 @@ public  class GameBoardBase extends GridPane {
         Button4.setPrefHeight(172.0);
         Button4.setPrefWidth(234.0);
             Button4.setOnAction((ActionEvent event) -> {
+                Button4.setDisable(true);
               if(move%2==0){
               Button4.setText("x");
              Button4.setStyle("-fx-font-size: 6em; -fx-text-fill: red; ");
@@ -166,6 +171,7 @@ public  class GameBoardBase extends GridPane {
         Button5.setPrefHeight(172.0);
         Button5.setPrefWidth(234.0);
             Button5.setOnAction((ActionEvent event) -> {
+                Button5.setDisable(true);
              if(move%2==0){
               Button5.setText("x");
              Button5.setStyle("-fx-font-size: 6em; -fx-text-fill: red; ");
@@ -186,7 +192,7 @@ public  class GameBoardBase extends GridPane {
         Button6.setPrefHeight(172.0);
         Button6.setPrefWidth(234.0);
             Button6.setOnAction((ActionEvent event) -> {
-               
+               Button6.setDisable(true);
                 if(move%2==0){
               Button6.setText("x");
              Button6.setStyle("-fx-font-size: 6em; -fx-text-fill: red; ");
@@ -206,6 +212,7 @@ public  class GameBoardBase extends GridPane {
         Button7.setPrefHeight(172.0);
         Button7.setPrefWidth(234.0);
             Button7.setOnAction((ActionEvent event) -> {
+                Button7.setDisable(true);
                     if(move%2==0){
               Button7.setText("x");
              Button7.setStyle("-fx-font-size: 6em; -fx-text-fill: red; ");
@@ -226,7 +233,7 @@ public  class GameBoardBase extends GridPane {
         Button8.setPrefHeight(172.0);
         Button8.setPrefWidth(234.0);
             Button8.setOnAction((ActionEvent event) -> {
-              
+              Button8.setDisable(true);
             if(move%2==0){
               Button8.setText("x");
              Button8.setStyle("-fx-font-size: 6em; -fx-text-fill: red; ");
@@ -249,7 +256,7 @@ public  class GameBoardBase extends GridPane {
         Button9.setPrefWidth(234.0);
             Button9.setOnAction((ActionEvent event) -> {
         
-           
+           Button9.setDisable(true);
              if(move%2==0){
               Button9.setText("x");
              Button9.setStyle("-fx-font-size: 6em; -fx-text-fill: red; ");
