@@ -17,9 +17,14 @@ import java.net.Socket;
 import java.util.Dictionary;
 
 import static java.lang.Integer.parseInt;
+import java.util.concurrent.TimeUnit;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javafx.animation.KeyFrame;
+import javafx.animation.Timeline;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
-import javax.swing.JOptionPane;
+import javafx.util.Duration;
 
 public class GameBoardBase extends GridPane {
 
@@ -49,6 +54,8 @@ public class GameBoardBase extends GridPane {
     protected boolean xWin;
     protected boolean oWin;
     protected int tie;
+    protected String pattern;
+
 
 
     Client client;
@@ -82,6 +89,7 @@ public class GameBoardBase extends GridPane {
         shape = "";
         gameRole = false;
         tie = 0;
+        pattern="";
 
         move=0;
 
@@ -245,8 +253,10 @@ public class GameBoardBase extends GridPane {
 
                                 }
                                 else {
+                                    pattern+=String.valueOf(replyMsg)+",";
+                                    
                                     BtnArr[parseInt(String.valueOf(replyMsg.charAt(1)))-1].setText(String.valueOf(replyMsg.charAt(0)));
-                                    System.out.println(shape);
+//                                    System.out.println(shape);
                                     BtnArr[parseInt(String.valueOf(replyMsg.charAt(1)))-1].setDisable(true);
                                     gameRole = true;
                                     if(moveFlag % 2 == 0 && flagInit){
@@ -322,9 +332,9 @@ public class GameBoardBase extends GridPane {
             }else{
                 a.setContentText("You Lose :(");
             }
-            
             a.showAndWait();
-            System.exit(0);
+            replay(pattern);
+//            System.exit(0);
             }else if(tie == 9 && !xWin && !oWin){
                 Alert a =new Alert(AlertType.INFORMATION);
                 a.setTitle("Finished");            
@@ -332,7 +342,8 @@ public class GameBoardBase extends GridPane {
                 System.out.println("Tie");
                 a.setContentText("Tie");
                 a.showAndWait();
-                System.exit(0);
+                replay(pattern);
+//                System.exit(0);
             }
         
 
@@ -466,7 +477,59 @@ public class GameBoardBase extends GridPane {
         }
 
     }
-
-
-
+    public void whichBtn(String s){
+       int a = parseInt(String.valueOf(s.charAt(1)));
+       switch(a){
+           case 1:
+               Button1.setText(String.valueOf(s.charAt(0)));
+               break;
+           case 2:
+               Button2.setText(String.valueOf(s.charAt(0)));
+               break;
+           case 3:
+               Button3.setText(String.valueOf(s.charAt(0)));
+               break;
+           case 4:
+               Button4.setText(String.valueOf(s.charAt(0)));
+               break;
+           case 5:
+               Button5.setText(String.valueOf(s.charAt(0)));
+               break;
+           case 6:
+               Button6.setText(String.valueOf(s.charAt(0)));
+               break;
+           case 7:
+               Button7.setText(String.valueOf(s.charAt(0)));
+               break;
+           case 8:
+               Button8.setText(String.valueOf(s.charAt(0)));
+               break;
+           case 9:
+               Button9.setText(String.valueOf(s.charAt(0)));
+               break;
+       }
+               
+       
+    }
+    public void replay(String s){
+        String arr [] = s.split(",");
+        
+        System.out.println("I am in!");
+        Platform.runLater(new Runnable() {
+            @Override public void run() {
+                for(int y=0;y<BtnArr.length;y++){
+                    BtnArr[y].setDisable(false);
+                    BtnArr[y].setText("");
+                }
+                }});
+                
+        for(int i=0;i<arr.length;i++){
+            final int y = i;
+            final KeyFrame kfi = new KeyFrame(Duration.seconds(i+1), e -> whichBtn(arr[y]));
+            final Timeline timeline = new Timeline(kfi);
+            Platform.runLater(timeline::play);
+        }                
+                
+                
+            }
 }
