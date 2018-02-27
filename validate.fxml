@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button layoutX="29.0" layoutY="308.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="134.0" style="-fx-background-color: black; -fx-border-radius: 10; -fx-border-color: #e13434;" text="Exit" textFill="#e13434">
+         <font>
+            <Font name="Showcard Gothic" size="21.0" />
+         </font>
+      </Button>
+      <Button layoutX="434.0" layoutY="308.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="134.0" style="-fx-background-color: black; -fx-border-radius: 10; -fx-border-color: #e13434;" text="Play" textFill="#e13434">
+         <font>
+            <Font name="Showcard Gothic" size="21.0" />
+         </font>
+      </Button>
+      <Text fill="#e13434" layoutX="30.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter your name">
+         <font>
+            <Font name="Showcard Gothic" size="30.0" />
+         </font>
+      </Text>
+      <TextField layoutX="344.0" layoutY="152.0" prefHeight="25.0" prefWidth="170.0" style="-fx-border-color: #e13434; -fx-border-radius: 5;" />
+   </children>
+</Pane>

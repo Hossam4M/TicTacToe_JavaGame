@@ -28,7 +28,7 @@ public  class GameBoardBase extends GridPane {
     protected final Button Button8;
     protected final Button Button9;
     protected int move;
-    
+    private final int[][] wins = new int[][] { { 0, 1, 2 }, { 3, 4, 5 }, { 6, 7, 8 }, { 0, 3, 6 }, { 1, 4, 7 }, { 2, 5, 8 }, { 0, 4, 8 }, { 2, 4, 6 } };
  
     public GameBoardBase() {
 
@@ -87,10 +87,10 @@ public  class GameBoardBase extends GridPane {
         Button1.setPrefHeight(172.0);
         Button1.setPrefWidth(234.0);
        
-           Button1.setOnAction((ActionEvent event) -> {
+           Button1.setOnAction(e -> {
                if(move%2==0){
-                   Button1.setDisable(true);
-              Button1.setText("x");
+             Button1.setDisable(true);
+             Button1.setText("x");
              Button1.setStyle("-fx-font-size: 6em; -fx-text-fill: red; ");
               move++;}
               else{

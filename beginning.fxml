@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="728.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button layoutX="560.0" layoutY="343.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="135.0" style="-fx-background-color: black; -fx-opacity: 2; -fx-background-insets: 3; -fx-background-position: 2; -fx-border-color: e13434; -fx-border-radius: 10;" text="Play" textFill="#e13434">
+         <font>
+            <Font name="Showcard Gothic" size="25.0" />
+         </font>
+      </Button>
+      <Button layoutX="33.0" layoutY="345.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="135.0" style="-fx-background-color: black; -fx-opacity: 2; -fx-background-insets: 3; -fx-background-position: 2; -fx-border-color: e13434; -fx-border-radius: 10;" text="Exit" textFill="#e13434" textOverrun="LEADING_ELLIPSIS">
+         <font>
+            <Font name="Showcard Gothic" size="25.0" />
+         </font>
+      </Button>
+      <Text fill="#e13434" layoutX="114.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tic Tac Toe" wrappingWidth="599.13671875">
+         <font>
+            <Font name="Showcard Gothic" size="90.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>
