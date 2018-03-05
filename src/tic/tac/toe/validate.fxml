@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="570.0" prefWidth="877.0" style="-fx-background-color: #C5E3F6;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button layoutX="24.0" layoutY="478.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="134.0" style="-fx-background-color: #C5E3F6;" text="Exit" textFill="#0d1b4c">
+         <font>
+            <Font name="Showcard Gothic" size="35.0" />
+         </font>
+      </Button>
+      <Button layoutX="614.0" layoutY="478.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="255.0" style="-fx-background-color: #C5E3F6;" text="Play" textFill="#0d1b4c">
+         <font>
+            <Font name="Showcard Gothic" size="35.0" />
+         </font>
+      </Button>
+      <Text fill="#0d1b4c" layoutX="27.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter your name :">
+         <font>
+            <Font name="Showcard Gothic" size="35.0" />
+         </font>
+      </Text>
+      <TextField layoutX="412.0" layoutY="223.0" prefHeight="49.0" prefWidth="226.0" style="-fx-background-radius: 9; -fx-border-color: #0d1b4c; -fx-border-radius: 9; -fx-font-color: red;">
+         <font>
+            <Font name="Showcard Gothic" size="16.0" />
+         </font>
+      </TextField>
+      <Button layoutX="68.0" layoutY="65.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="100.0" style="-fx-background-color: #C5E3F6;" textFill="#c5e3f6" />
+      <ImageView fitHeight="131.0" fitWidth="134.0" layoutX="25.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../14-512.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

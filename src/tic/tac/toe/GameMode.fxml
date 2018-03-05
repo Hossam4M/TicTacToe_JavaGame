@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="570.0" prefWidth="877.0" style="-fx-background-color: #C5E3F6;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text fill="#0d1b4c" layoutX="144.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose your Game Mode ">
+         <font>
+            <Font name="Showcard Gothic" size="38.0" />
+         </font>
+      </Text>
+      <Button layoutX="220.0" layoutY="178.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="391.0" style="-fx-background-color: #C5E3F6;" text="single player" textFill="#0d1b4c">
+         <font>
+            <Font name="Showcard Gothic" size="30.0" />
+         </font>
+      </Button>
+      <Button layoutX="230.0" layoutY="453.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="371.0" style="-fx-background-color: #C5E3F6;" text="Remote two players" textFill="#0d1b4c">
+         <font>
+            <Font name="Showcard Gothic" size="30.0" />
+         </font>
+      </Button>
+      <Button layoutX="241.0" layoutY="311.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="350.0" style="-fx-background-color: #C5E3F6;" text="local two players" textFill="#0d1b4c">
+         <font>
+            <Font name="Showcard Gothic" size="30.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="85.0" fitWidth="87.0" layoutX="135.0" layoutY="163.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../imageedit_3_8728124905.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="85.0" fitWidth="87.0" layoutX="144.0" layoutY="296.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../imageedit_8_4126649007.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="85.0" fitWidth="87.0" layoutX="144.0" layoutY="438.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../icon-networking-1.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="14.0" layoutY="24.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="111.0" style="-fx-background-color: #C5E3F6;" />
+      <ImageView fitHeight="132.0" fitWidth="135.0" layoutX="14.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../14-512.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>
