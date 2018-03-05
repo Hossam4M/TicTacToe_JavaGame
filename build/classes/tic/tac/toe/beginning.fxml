@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane blendMode="ADD" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="570.0" prefWidth="877.0" style="-fx-background-color: #C5E3F6;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button id="one" layoutX="308.0" layoutY="185.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="226.0" style="-fx-background-color: #C5E3F6; -fx-opacity: 2; -fx-background-insets: 3; -fx-background-position: 2; -fx-border-radius: 10;" text="Play" textFill="#0d1b4c">
+         <font>
+            <Font name="Showcard Gothic" size="49.0" />
+         </font>
+      </Button>
+      <Text fill="#0d1b4c" layoutX="139.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="animate" text="Tic Tac Toe" wrappingWidth="599.13671875">
+         <font>
+            <Font name="Showcard Gothic" size="90.0" />
+         </font>
+      </Text>
+      <Button id="one" layoutX="308.0" layoutY="427.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="226.0" style="-fx-background-color: #C5E3F6; -fx-opacity: 2; -fx-background-insets: 3; -fx-background-position: 2; -fx-border-radius: 10;" text="Exit" textFill="#0d1b4c">
+         <font>
+            <Font name="Showcard Gothic" size="49.0" />
+         </font>
+      </Button>
+      <Button id="one" layoutX="276.0" layoutY="312.0" mnemonicParsing="false" prefHeight="90.0" prefWidth="310.0" style="-fx-background-color: #C5E3F6; -fx-opacity: 2; -fx-background-insets: 3; -fx-background-position: 2; -fx-border-radius: 10;" text="watch a game" textFill="#0d1b4c">
+         <font>
+            <Font name="Showcard Gothic" size="32.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

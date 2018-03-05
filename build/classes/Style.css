@@ -1,0 +1,12 @@
+
+.animate{
+     -fx-background-color: white;
+    
+    
+    
+}
+
+.root{
+  -fx-background-color: linear-gradient(black,white,black);
+
+}
